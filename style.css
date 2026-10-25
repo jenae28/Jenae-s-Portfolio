@@ -1,0 +1,1076 @@
+/* General Website Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    font-size: 24px;
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 8%;
+}
+
+/* Hero Introduction */
+.hero-content {
+    max-width: 600px;
+}
+
+.greeting {
+    color: #38bdf8;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 span {
+    color: #38bdf8;
+}
+
+.hero-content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+/* Projects Button */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+    transform: translateY(-3px);
+}
+
+/* Profile Picture */
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #38bdf8;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+/* Other Sections */
+.extra-section {
+    padding: 80px 8%;
+    min-height: 300px;
+}
+
+.extra-section h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 6%;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+/* Hero Buttons Container */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Contact Me Button */
+.contact-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Contact Button Hover Effect */
+.contact-btn:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsive Buttons */
+@media (max-width: 768px) {
+    .hero-buttons {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* =========================
+   ABOUT ME SECTION
+========================= */
+
+.about-section {
+    background-color: #0f172a;
+    padding: 80px 8%;
+    color: white;
+}
+
+/* About Me Heading */
+.about-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-heading h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+/* Blue Color for "Me" */
+.about-heading h2 span {
+    color: #38bdf8;
+}
+
+.about-heading p {
+    font-size: 17px;
+    color: #cbd5e1;
+}
+
+/* Personal Introduction Box */
+.about-intro {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 4px solid #38bdf8;
+}
+
+.about-intro h3 {
+    font-size: 24px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.about-intro p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* Cards Container */
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Individual Cards */
+.about-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+/* Card Headings */
+.about-card h3 {
+    font-size: 22px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* Card Paragraphs */
+.about-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* Hover Effect */
+.about-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.15);
+}
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 50px 6%;
+    }
+
+    .about-heading h2 {
+        font-size: 30px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro {
+        padding: 20px;
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-card h3 {
+        font-size: 20px;
+    }
+}
+
+/* =========================
+   TECHNICAL SKILLS SECTION
+========================= */
+
+.skills-section {
+    background-color: #0f172a;
+    padding: 80px 8%;
+    color: white;
+}
+
+/* Section Heading */
+.skills-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.skills-heading h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.skills-heading h2 span {
+    color: #38bdf8;
+}
+
+.skills-heading p {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* Skills Grid */
+.skills-container {
+    display: grid;
+
+    /* Creates evenly spaced columns */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Individual Skill Cards */
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+
+    padding: 30px 20px;
+    text-align: center;
+
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+
+    transition: 0.3s ease;
+}
+
+/* Technology Icons */
+.skill-card i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+
+    font-size: 55px;
+    line-height: 1;
+
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+/* GitHub Icon */
+.skill-card .devicon-github-original {
+    color: white;
+}
+
+/* Skill Titles */
+.skill-card h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+/* Skill Descriptions */
+.skill-card p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+
+    box-shadow: 0 8px 25px
+        rgba(56, 189, 248, 0.15);
+}
+
+/* Tablet Screens */
+@media (max-width: 900px) {
+
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+
+    .skills-section {
+        padding: 50px 6%;
+    }
+
+    .skills-heading h2 {
+        font-size: 30px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 30px 20px;
+    }
+
+}
+
+/* =========================
+   EDUCATION & EXPERIENCE
+========================= */
+
+.education-section {
+    background-color: #0f172a;
+    padding: 80px 8%;
+    color: white;
+}
+
+/* Main Heading */
+.education-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.education-heading h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.education-heading h2 span {
+    color: #38bdf8;
+}
+
+.education-heading p {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Education and Experience Subheadings */
+.education-subtitle {
+    color: #38bdf8;
+    font-size: 26px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+/* Education Grid */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Education Cards */
+.education-card,
+.experience-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+/* Card Hover Effect */
+.education-card:hover,
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 8px 25px
+        rgba(56, 189, 248, 0.15);
+}
+
+/* Card Titles */
+.education-card h3,
+.experience-card h3 {
+    color: #38bdf8;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+/* Institution and Workplace */
+.education-card h4,
+.experience-card h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Dates */
+.education-date {
+    color: #7dd3fc;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Descriptions */
+.education-card p,
+.experience-card p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+/* Degree or Credential */
+.education-detail {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsibilities and Achievements */
+.experience-card ul {
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.experience-card li {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .education-section {
+        padding: 50px 6%;
+    }
+
+    .education-heading h2 {
+        font-size: 30px;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card,
+    .experience-card {
+        padding: 20px;
+    }
+
+    .education-subtitle {
+        font-size: 23px;
+    }
+}
+
+/* =========================
+   MY PROJECTS SECTION
+========================= */
+
+.projects-section {
+    background-color: #0f172a;
+    padding: 80px 8%;
+    color: white;
+}
+
+/* Projects Heading */
+.projects-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.projects-heading h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.projects-heading h2 span {
+    color: #38bdf8;
+}
+
+.projects-heading p {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* Projects Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Individual Project Card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+
+    min-width: 0;
+    height: 100%;
+
+    transition: 0.3s ease;
+}
+
+/* Project Icons */
+.project-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* Project Titles */
+.project-card h3 {
+    font-size: 22px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* Project Descriptions */
+.project-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* GitHub Button */
+.github-btn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+
+    margin-top: auto;
+    transition: 0.3s ease;
+}
+
+/* GitHub Button Hover */
+.github-btn:hover {
+    background-color: #0369a1;
+    transform: translateY(-3px);
+}
+
+/* Project Card Hover */
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+
+    box-shadow: 0 8px 25px
+        rgba(56, 189, 248, 0.15);
+}
+
+/* =========================
+   TABLET RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+
+    .projects-section {
+        padding: 50px 6%;
+    }
+
+    .projects-heading h2 {
+        font-size: 30px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+}
+
+/* =========================
+   CONTACT ME SECTION
+========================= */
+
+.contact-section {
+    background-color: #0f172a;
+    padding: 80px 8%;
+    color: white;
+}
+
+/* Section Heading */
+.contact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-heading h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contact-heading h2 span {
+    color: #38bdf8;
+}
+
+.contact-heading p {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Two Column Layout */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Left and Right Cards */
+.contact-info,
+.contact-form-box {
+    background-color: #1e293b;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    min-width: 0;
+}
+
+/* Card Headings */
+.contact-info h3,
+.contact-form-box h3 {
+    color: #38bdf8;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Introduction */
+.contact-info p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Social Media Links */
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+
+    transition: 0.3s ease;
+}
+
+/* Social Icons */
+.social-link i,
+.social-emoji {
+    font-size: 26px;
+    color: #38bdf8;
+    flex-shrink: 0;
+}
+
+/* Social Link Hover */
+.social-link:hover {
+    border-color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+/* Inputs and Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 8px;
+
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Placeholder Text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+    border-color: #38bdf8;
+}
+
+/* Message Field */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 15px 25px;
+
+    background-color: #0284c7;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* Button Hover */
+.submit-btn:hover {
+    background-color: #0369a1;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 50px 6%;
+    }
+
+    .contact-heading h2 {
+        font-size: 30px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form-box {
+        padding: 25px;
+    }
+
+}
+
+/* =========================
+   FOOTER SECTION
+========================= */
+
+.footer {
+    background-color: #0b1120;
+    color: white;
+    padding: 60px 8% 25px;
+    border-top: 1px solid #334155;
+}
+
+/* Footer Layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 45px;
+}
+
+/* Your Name */
+.footer-about h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-about h2 span {
+    color: #38bdf8;
+}
+
+/* Professional Role */
+.footer-role {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* Closing Message */
+.footer-about p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+/* Quick Links and Social Headings */
+.footer-links h3,
+.footer-social h3 {
+    font-size: 19px;
+    color: white;
+    margin-bottom: 22px;
+}
+
+/* Navigation and Social Links */
+.footer-links a,
+.footer-social a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+/* Link Hover Effect */
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* Social Media Icons */
+.footer-social i {
+    font-size: 21px;
+    color: #38bdf8;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    border-top: 1px solid #334155;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   TABLET RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+
+}
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 45px 6% 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-about h2 {
+        font-size: 25px;
+    }
+
+    .footer-links h3,
+    .footer-social h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+}
